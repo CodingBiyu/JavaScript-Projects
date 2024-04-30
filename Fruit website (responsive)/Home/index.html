@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+
+<!--doctype html-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Title-->
+
+    <title>Fruits</title>
+
+    <!--Stylsheet-->
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!--Fav-icons-->
+
+    <link rel="shortcut icon" href="images/fav-icon.png" />
+
+    <!------Using-Font-Awesome------>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous" />
+
+    <!-----Import-Font-Family from google fonts------->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!------Navigation------->
+    <nav class="navigation">
+      <!--logo-->
+      <a href="index.html" class="logo"> <span>e</span>Fruits </a>
+      <!--  -->
+      <ul class="menu">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="#category">Categories</a></li>
+        <li><a href="#popular-bundle-pack">Our Packages</a></li>
+        <li><a href="#download-app">Our App</a></li>
+        <li><a href="../Contact us/contact.html">Contact us</a></li>
+      </ul>
+      <!--right-nav-(cart-like)-->
+      <div class="right">
+        <div class="right-nav">
+          <!--like----->
+          <a href="#" class="like">
+            <i class="far fa-heart"></i>
+            <span class="likes">0</span>
+          </a>
+          <!--cart----->
+          <a href="#" class="cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="total_fruits">0</span>
+          </a>
+        </div>
+        <!--menu-btn-->
+        <input type="checkbox" class="menu-btn" id="menu-btn" />
+        <label for="menu-btn" class="menu-icon">
+          <span class="nav-icon"></span>
+        </label>
+        <ul class="menu-mob">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#category">Categories</a></li>
+          <li><a href="#popular-bundle-pack">Our Packages</a></li>
+          <li><a href="#download-app">Our App</a></li>
+          <li>
+            <a href="/login/login.html"> Login </a>
+          </li>
+        </ul>
+        <!-- menu -->
+        <button class="login-btn">Login</button>
+      </div>
+    </nav>
+    <!--nav-end-->
+
+    <!--Search-banner-->
+    <section id="search-banner">
+      <!--bg--->
+      <img alt="bg" class="bg-1" src="../images/bg-1.png" />
+      <img alt="bg-2" class="bg-2" src="../images/fruit-bg2.png" />
+      <!--text------->
+      <div class="search-banner-text">
+        <h1>Order Your daily Grocery <span>Fruits</span></h1>
+        <strong>#Free Delivery</strong>
+        <!--search-box-->
+        <form action="" class="search-box">
+          <!--icon---->
+          <i class="fas fa-search"></i>
+          <!--input----->
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search your daily Fruits"
+            name="search"
+            required />
+          <!--btn-->
+          <input type="submit" class="search-btn" value="Search" />
+        </form>
+      </div>
+    </section>
+    <!--search-banner-end--------------->
+
+    <!--category-->
+    <section id="category">
+      <!--heading---------------->
+      <div class="category-heading">
+        <h2>Category</h2>
+        <span>All</span>
+      </div>
+
+      <!--box-container---------->
+      <div class="category-container">
+        <!--box---------------->
+        <a href="#" class="category-box">
+          <img alt="Fish" src="../images/fruits/harvest.png" />
+          <span>All fruits</span>
+        </a>
+        <!--box---------------->
+        <a href="#" class="category-box">
+          <img alt="Fish" src="../images/berries.png" />
+          <span>Berries</span>
+        </a>
+
+        <!--box---------------->
+        <a href="#" class="category-box">
+          <img alt="Fish" src="../images/orange.png" />
+          <span>Citrus Fruit</span>
+        </a>
+
+        <!--box---------------->
+        <a href="#" class="category-box">
+          <img alt="Fish" src="../images/banana.png" />
+          <span>Tropical Fruit</span>
+        </a>
+
+        <!-- box---------------->
+        <a href="#" class="category-box">
+          <img alt="Fish" src="../images/pistachio.png" />
+
+          <span>Dry Fruits</span>
+        </a>
+
+        <!--box---------------->
+        <a href="#" class="category-box">
+          <img alt="Fish" src="../images/bundle.png" />
+
+          <span>Bundle</span>
+        </a>
+      </div>
+    </section>
+    <!--category-end----------------------------------->
+
+    <!----------Products------------->
+    <section id="popular-product">
+      <!--heading----------->
+      <div class="product-heading">
+        <h3>Popular Product</h3>
+        <span>All</span>
+      </div>
+      <!--box-container------>
+      <div class="product-container">
+        <!--box---------->
+        <div class="product-box">
+          <img alt="apple" src="../images/fruits/apple.png" />
+          <strong>Apple</strong>
+          <span class="quantity">1 KG</span>
+          <span class="price">Rs 200</span>
+          <!--cart-btn------->
+          <a class="cart-btn"> <i class="fas fa-shopping-bag"></i> Add Cart </a>
+          <!--like-btn------->
+          <a class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img alt="apple" src="../images/fruits/manngo.jpg" />
+          <strong>Mango</strong>
+          <span class="quantity">1 KG</span>
+          <span class="price">Rs 300</span>
+          <!--cart-btn------->
+          <a class="cart-btn">
+            <i class="fas fa-shopping-bag"></i>
+            Add Cart
+          </a>
+          <!--like-btn------->
+          <a class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img alt="apple" src="../images/fruits/melon.jpg" />
+          <strong>Melon</strong>
+          <span class="quantity">1 KG</span>
+          <span class="price">Rs 100</span>
+          <!--cart-btn------->
+          <a class="cart-btn"> <i class="fas fa-shopping-bag"></i> Add Cart </a>
+          <!--like-btn------->
+          <a class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img alt="apple" src="../images/fruits/orange.jpg" />
+          <strong>Orange</strong>
+          <span class="quantity">1 KG</span>
+          <span class="price"> Rs 220</span>
+          <!--cart-btn------->
+          <a class="cart-btn"> <i class="fas fa-shopping-bag"></i> Add Cart </a>
+          <!--like-btn------->
+          <a class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img alt="apple" src="../images/fruits/papaya.jpg" />
+          <strong>Papaya</strong>
+          <span class="quantity">1 KG</span>
+          <span class="price">Rs 300</span>
+          <!--cart-btn------->
+          <a class="cart-btn"> <i class="fas fa-shopping-bag"></i> Add Cart </a>
+          <!--like-btn------->
+          <a class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img alt="apple" src="../images/fruits/Pom.jpg" />
+          <strong>Pomegranate</strong>
+          <span class="quantity">1 KG</span>
+          <span class="price">Rs 140 </span>
+          <!--cart-btn------->
+          <a class="cart-btn"> <i class="fas fa-shopping-bag"></i> Add Cart </a>
+          <!--like-btn------->
+          <a class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <div class="product-box">
+          <img alt="apple" src="../images/fruits/strawnb.jpg" />
+          <strong>Strawberry</strong>
+          <span class="quantity">1 KG</span>
+          <span class="price">Rs 150</span>
+          <!--cart-btn------->
+          <a class="cart-btn"> <i class="fas fa-shopping-bag"></i> Add Cart </a>
+          <!--like-btn------->
+          <a class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--Popular-bundle-pack------->
+    <section id="popular-bundle-pack">
+      <!--heading-------------->
+      <div class="product-heading">
+        <h3>Popular Bundle Pack</h3>
+      </div>
+      <!--box-container------>
+      <div class="product-container">
+        <!--box---------->
+        <div class="product-box">
+          <img alt="pack" src="../images/bundle/fruit bundle-7.png" />
+          <strong>Big Pack</strong>
+          <span class="quantity">Kiwi, Grapes, Pineapple,+4</span>
+          <span class="price">Rs 2500</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img alt="apple" src="../images/bundle/fruit-bundle-6.png" />
+          <strong>Large Pack</strong>
+          <span class="quantity">Grapes, Orange, Mango,+2</span>
+          <span class="price">Rs 1500</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img alt="apple" src="../images/bundle/fruit bundle-5.png" />
+          <strong>Small Pack</strong>
+          <span class="quantity">Kiwi, Orange, Grapes</span>
+          <span class="price">Rs 1200</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img alt="pack" src="../images/bundle/fruit_basket-1.png" />
+          <strong>Big Pack</strong>
+          <span class="quantity">Orange, Mango, Apple,+4</span>
+          <span class="price">Rs 800</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img alt="apple" src="../images/bundle/fruit_bundle-2.png" />
+          <strong>Medium Pack</strong>
+          <span class="quantity">Apple Orange, Grape,+2</span>
+          <span class="price">Rs 500</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img alt="apple" src="../images/bundle/fruit bundle-3.jpg" />
+          <strong>large Pack</strong>
+          <span class="quantity">Banana, Strawberry,Apple,+3</span>
+          <span class="price">Rs 400</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!---------Clients-------------->
+    <section id="clients">
+      <!-- Heading -->
+      <div class="client-heading">
+        <h3>What Our Customers Say</h3>
+      </div>
+      <!-- Box Container -->
+      <div class="client-box-container">
+        <!-- Box 1 -->
+        <div class="client-box">
+          <!-- Profile -->
+          <div class="client-profile">
+            <!-- Image -->
+            <img alt="client" src="../images/CLIENTS/client-1.jpg" />
+            <!-- Text -->
+            <div class="profile-text">
+              <strong>Hamza saad</strong>
+              <span>Fruit Enthusiast</span>
+            </div>
+          </div>
+          <!-- Rating -->
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <!-- Review -->
+          <p>
+            I absolutely love the variety of fruits available on this website!
+            The quality is always top-notch, and the fruits are always fresh.
+            Plus, the customer service is fantastic. Highly recommend!
+          </p>
+        </div>
+        <!-- Box 2 -->
+        <div class="client-box">
+          <!-- Profile -->
+          <div class="client-profile">
+            <!-- Image -->
+            <img alt="client" src="../images/CLIENTS/client-2.jpg" />
+            <!-- Text -->
+            <div class="profile-text">
+              <strong>Asmir Shafi</strong>
+              <span>Health Enthusiast</span>
+            </div>
+          </div>
+          <!-- Rating -->
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <!-- Review -->
+          <p>
+            As someone who prioritizes health, I rely on fresh fruits as a key
+            part of my diet. This website has been a lifesaver! The fruits are
+            always delivered promptly and are of exceptional quality. Couldn't
+            ask for more!
+          </p>
+        </div>
+        <!-- Box 3 -->
+        <div class="client-box">
+          <!-- Profile -->
+          <div class="client-profile">
+            <!-- Image -->
+            <img alt="client" src="../images/CLIENTS/client-3.jpg" />
+            <!-- Text -->
+            <div class="profile-text">
+              <strong>Sarah Ibrahim</strong>
+              <span>Fitness Trainer</span>
+            </div>
+          </div>
+
+          <!-- Rating -->
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <!-- Review -->
+          <p>
+            This fruit website is a game-changer! The variety of fruits
+            available is impressive, and the prices are very reasonable. Whether
+            I need fruits for myself or for my clients, this is my go-to
+            destination.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--client-section-end---------->
+
+    <!--==Partnre-logo-->
+    <section id="partner">
+      <!--heading------------>
+      <div class="partner-heading">
+        <h3>Our Trusted Partner</h3>
+      </div>
+
+      <!--logo-container----->
+      <div class="logo-container">
+        <img alt="logo" src="../images/logo-1.png" />
+        <img alt="logo" src="../images/logo-2.png" />
+        <img alt="logo" src="../images/logo-3.png" />
+        <img alt="logo" src="../images/logo-4.png" />
+      </div>
+    </section>
+    <!--logo-section-end--------------------->
+
+    <!--------download-app------->
+    <section id="download-app">
+      <div class="app-img">
+        <!-- Image of the mobile app -->
+        <img alt="app" src="../images/mobile-app-2.png" />
+      </div>
+
+      <div class="download-app-text">
+        <!-- Heading -->
+        <strong>Download Our Mobile App</strong>
+
+        <!-- Description -->
+        <p>
+          Stay connected with us on-the-go by downloading our mobile app! Access
+          a wide range of fresh fruits, vegetables, and other groceries right at
+          your fingertips. With our user-friendly interface and secure checkout
+          process, shopping for your favorite produce has never been easier.
+        </p>
+        <!-- Download buttons -->
+        <div class="download-btns">
+          <!-- App Store button -->
+          <a href="#"
+            ><img alt="App Store" src="../images/appstore-btn.png"
+          /></a>
+
+          <!-- Google Play button -->
+          <a href="#"
+            ><img alt="Google Play" src="../images/googleplay-btn.png"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <!------download-app-section-end------------------------->
+
+    <!--------Footer-------------->
+
+    <footer>
+      <div class="footer-container">
+        <!--logo-container------>
+        <div class="footer-logo">
+          <a href="#"><span>e</span>Fruits</a>
+
+          <!--social----->
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!--links------------------------->
+        <div class="footer-links">
+          <strong>Product</strong>
+          <ul>
+            <li><a href="#">Seasonal Fruits</a></li>
+            <li><a href="#">Dry Fruits</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">New</a></li>
+          </ul>
+        </div>
+
+        <!--links------------------------->
+        <div class="footer-links">
+          <strong>Category</strong>
+          <ul>
+            <li><a href="#">Tropical Fruits</a></li>
+            <li><a href="#">Dry Fruits</a></li>
+            <li><a href="#">Citrus Fruits</a></li>
+            <li><a href="#">Bundle</a></li>
+          </ul>
+        </div>
+
+        <!--links-------------------------->
+        <div class="footer-links">
+          <strong>Contact</strong>
+          <ul>
+            <li><a href="#">Phone : +123456789</a></li>
+            <li><a href="#">Email : eFruit@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
