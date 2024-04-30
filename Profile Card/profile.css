@@ -1,0 +1,133 @@
+* {
+  margin: 0%;
+}
+body {
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.main {
+  background: #e9e6f7;
+  height: 410px;
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px 5px #056676;
+  z-index: 1;
+  padding: 5px;
+  transform: translateY(-60px);
+}
+.side-img img {
+  height: 820px;
+  /* position: relative; */
+}
+.top {
+  background: #056676;
+  height: 150px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+.top img {
+  height: 150px;
+  border-radius: 90%;
+  /* border: 3px solid white; */
+  border: 5px solid #056676; /*#5cb6c4; */
+  /* position: absolute;
+  left: 32%;
+  top: 22%; */
+
+  padding-top: 10px;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  max-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header h2 {
+  padding-top: 25px;
+}
+.header p {
+  line-height: 27px;
+}
+
+/* icons 1 */
+.icons,
+.icons-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 18px;
+}
+.icons img {
+  height: 32px;
+}
+.icons img:nth-child(1),
+.icons img:nth-child(3) {
+  filter: invert(100%) sepia(0%) saturate(750%) hue-rotate(346deg)
+    brightness(101%) contrast(101%);
+}
+.facebook,
+.instagram {
+  background: #243a73;
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.facebook img,
+.instagram img {
+  height: 20px;
+}
+
+.instagram {
+  background: #b3005e;
+  border-radius: 100%;
+}
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+button {
+  background-color: #056676;
+  min-width: 110px;
+  padding: 10px;
+  border: none;
+  border-radius: 120px;
+  color: white;
+  font-size: 14px;
+}
+/*  icons 2 */
+
+.icons-2 div {
+  border-right: 1px solid rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 80px;
+}
+.icons-2 :last-child {
+  border: none;
+}
+.icons-2 img {
+  height: 15px;
+  margin-left: 9px;
+  fill: #b3005e;
+}
+/* .heart:hover {
+  filter: invert(11%) sepia(81%) saturate(7489%) hue-rotate(20deg)
+    brightness(80%) contrast(117%);
+} */
